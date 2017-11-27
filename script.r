@@ -108,5 +108,5 @@ d_td=as.data.frame(data.table(d_mean_sd[,names(d_mean_sd)[names(d_mean_sd)!="act
 d_td    = merge(d_td,d_activity_labels,by='activityId',all.x=TRUE)
 head(d_td)
 # write data to disk
-write.table(d_td, './tidy_data.txt',row.names=TRUE,sep='\t')
+write.table(d_td, 'tidy_data.txt',row.names=FALSE,sep='\t')
 
